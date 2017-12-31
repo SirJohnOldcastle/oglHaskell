@@ -25,7 +25,7 @@ main = do
   GLFW.windowHint (GLFW.WindowHint'Samples 4)
   GLFW.windowHint (GLFW.WindowHint'ContextVersionMajor 3)
   GLFW.windowHint (GLFW.WindowHint'ContextVersionMinor 3)
-  GLFW.windowHint (GLFW.WindowHint'OpenGLProfile GLFW.OpenGLProfile'Core)
+  GLFW.windowHint (GLFW.WindowHint'OpenGLProfile GLFW.OpenGLProfile'Core) --these next two flags are necessary on my Mac to make things work beyond version 2.
   GLFW.windowHint (GLFW.WindowHint'OpenGLForwardCompat True)
   GLFW.windowHint (GLFW.WindowHint'Resizable False)
   maybeWin <- GLFW.createWindow 1024 768 "Tutorial 01" Nothing Nothing
